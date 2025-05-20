@@ -2,7 +2,18 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 
+/* not working yet, sadge :( */
+* {
+  @apply !transition-colors !duration-200;
+}
+
 @layer base {
+  *, *::before, *::after {
+    @apply m-0 font-normal box-border;
+  }
+  body {
+    @apply bg-background text-on-background;
+  }
   button, [role="button"] {
     cursor: pointer;
   }
@@ -76,12 +87,6 @@
   --on-primary: var(--color-indigo-50);
   --secondary: var(--color-indigo-400);
   --on-secondary: var(--color-indigo-50);
-}
-
-@layer base {
-  body {
-    @apply bg-background text-on-background;
-  }
 }
 
 /* 
