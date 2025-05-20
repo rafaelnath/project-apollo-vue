@@ -47,6 +47,46 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-on-background: var(--on-background);
+  --color-surface: var(--surface);
+  --color-on-surface: var(--on-surface);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-secondary: var(--secondary);
+  --color-on-secondary: var(--on-secondary);
+}
+
+:root {
+  --background: var(--color-zinc-50);
+  --on-background: var(--color-zinc-950);
+  --surface: var(--color-zinc-200);
+  --on-surface: var(--color-zinc-950);
+  --primary: var(--color-indigo-800);
+  --on-primary: var(--color-indigo-50);
+  --secondary: var(--color-indigo-900);
+  --on-secondary: var(--color-indigo-50);
+}
+
+.dark {
+  --background: var(--color-zinc-950);
+  --on-background: var(--color-zinc-50);
+  --surface: var(--color-zinc-800);
+  --on-surface: var(--color-zinc-50);
+  --primary: var(--color-indigo-600);
+  --on-primary: var(--color-indigo-50);
+  --secondary: var(--color-indigo-400);
+  --on-secondary: var(--color-indigo-50);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background;
+  }
+}
+
+/* 
+@theme inline {
+  --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -162,4 +202,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} */

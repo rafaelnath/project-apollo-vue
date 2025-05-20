@@ -44,7 +44,7 @@ const goToPage = (name: string) => {
 
 </script>
 <template>
-    <div class="w-[260px] h-full flex flex-col bg-zinc-900">
+    <div class="w-[260px] h-full flex flex-col bg-surface text-on-surface">
         <div class="w-full h-16 p-2">
             <Switcher />
         </div>
