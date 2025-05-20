@@ -29,7 +29,7 @@ const handleChildClick = (name: string) => {
             <div class="w-4 h-4 bg-on-surface" v-if="childs"></div>
         </div>
         <div class="w-full px-3.5" v-if="childs && showSubMenu">
-            <div class="w-full px-2.5 py-0.5 flex flex-col gap-1 border-l border-zinc-800">
+            <div class="w-full px-2.5 py-0.5 flex flex-col gap-1 border-l border-border">
                 <SubMenu :name="child.name" :text="child.text" v-for="(child, index) in childs" :key="index"
                     @on-click="handleChildClick" />
             </div>

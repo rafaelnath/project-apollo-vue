@@ -6,8 +6,9 @@ const isDarkTheme = useDark();
 const toggleDarkTheme = useToggle(isDarkTheme);
 </script>
 <template>
-    <div class="w-full h-lvh flex gap-0.25">
+    <div class="w-full h-lvh flex">
         <Sidebar></Sidebar>
+        <div class="w-0.25 h-full bg-border"></div>
         <div class="grow h-full flex flex-col px-6">
             <div class="w-full h-16 flex justify-between items-center bg-zinc-400 gap-6">
                 <div class="w-6 h-6 bg-zinc-200"></div>

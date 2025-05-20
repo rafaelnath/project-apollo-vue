@@ -61,6 +61,7 @@
   --color-on-background: var(--on-background);
   --color-surface: var(--surface);
   --color-on-surface: var(--on-surface);
+  --color-border: var(--border);
   --color-primary: var(--primary);
   --color-on-primary: var(--on-primary);
   --color-secondary: var(--secondary);
@@ -72,6 +73,7 @@
   --on-background: var(--color-zinc-950);
   --surface: var(--color-zinc-200);
   --on-surface: var(--color-zinc-950);
+  --border: var(--color-zinc-300);
   --primary: var(--color-indigo-800);
   --on-primary: var(--color-indigo-50);
   --secondary: var(--color-indigo-900);
@@ -83,6 +85,7 @@
   --on-background: var(--color-zinc-50);
   --surface: var(--color-zinc-800);
   --on-surface: var(--color-zinc-50);
+  --border: var(--color-zinc-700);
   --primary: var(--color-indigo-600);
   --on-primary: var(--color-indigo-50);
   --secondary: var(--color-indigo-400);
